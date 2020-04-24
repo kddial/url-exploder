@@ -11,7 +11,7 @@ const UrlParams = (props) => {
   const paramsString = url.slice(indexParams);
   const paramsArray = paramsString.split('&').map((queryString) => {
     //split by equal
-    return queryString.replace(/\?+|\&+/g, '').split('=');
+    return queryString.replace(/\?+|&+/g, '').split('=');
   });
 
   const tableRowRender = (param, index) => {
