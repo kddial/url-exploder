@@ -5,7 +5,7 @@ const UrlParams = (props) => {
 
   const indexParams = url.indexOf('?');
   if (indexParams === -1) {
-    return <div>No params</div>;
+    return <div></div>;
   }
 
   const paramsString = url.slice(indexParams);
